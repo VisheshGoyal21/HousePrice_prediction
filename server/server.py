@@ -24,10 +24,9 @@ def predict_home_price():
     })
     response.headers.add('Access-Control-Allow-Origin', '*')
 
-    return response    
-    
+    return response
 
-if __name__ == "__name__":
-    print("Starting Python Flask server for House Price Prediction")
+if __name__ == "__main__":
+    print("Starting Python Flask Server For Home Price Prediction...")
     util.load_saved_artifacts()
     app.run()
